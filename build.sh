@@ -35,7 +35,7 @@ for url in $urls; do
 	git clone $arg_q --depth=1 $url
 done
 curl -L git.io/antigen > $build_dir/antigen.zsh
-git clone https://github.com/everiori/xxh_dotfiles
+git clone https://github.com/everiori/xxh_dotfiles dotfiles
 mv dotfiles/.* .
 rm -rf .git
 rm -rf dotfiles
